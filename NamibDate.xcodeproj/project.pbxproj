@@ -14,6 +14,7 @@
 		B2CAFE1F1B56365000488DF9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CAFE1E1B56365000488DF9 /* Images.xcassets */; };
 		B2CAFE221B56365000488DF9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CAFE201B56365000488DF9 /* LaunchScreen.xib */; };
 		B2CAFE2E1B56365000488DF9 /* NamibDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CAFE2D1B56365000488DF9 /* NamibDateTests.swift */; };
+		B2CAFE391B578B8A00488DF9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CAFE381B578B8A00488DF9 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B2CAFE271B56365000488DF9 /* NamibDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NamibDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CAFE2C1B56365000488DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2CAFE2D1B56365000488DF9 /* NamibDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamibDateTests.swift; sourceTree = "<group>"; };
+		B2CAFE381B578B8A00488DF9 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				B2CAFE141B56365000488DF9 /* AppDelegate.swift */,
+				B2CAFE371B578B6000488DF9 /* Views */,
 				B2CAFE191B56365000488DF9 /* ViewController.swift */,
 				B2CAFE1B1B56365000488DF9 /* Main.storyboard */,
 				B2CAFE1E1B56365000488DF9 /* Images.xcassets */,
@@ -113,6 +116,15 @@
 				B2CAFE2C1B56365000488DF9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2CAFE371B578B6000488DF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2CAFE381B578B8A00488DF9 /* CardView.swift */,
+			);
+			name = Views;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +229,7 @@
 			files = (
 				B2CAFE1A1B56365000488DF9 /* ViewController.swift in Sources */,
 				B2CAFE151B56365000488DF9 /* AppDelegate.swift in Sources */,
+				B2CAFE391B578B8A00488DF9 /* CardView.swift in Sources */,
 				B2CAFE181B56365000488DF9 /* NamibDate.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
