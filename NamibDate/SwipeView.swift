@@ -46,7 +46,23 @@ class SwipeView: UIView {
         let distance = gestureRecognizer.translationInView(self)
         println("distance x:\(distance.x), y:\(distance.y)")
         
-        center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
+        switch gestureRecognizer.state{
+        case UIGestureRecognizerState.Began:
+            originalPoint = center
+        case UIGestureRecognizerState.Changed:
+            center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
+        case UIGestureRecognizerState.Ended:
+            resetViewPositionAndTransformations()
+        default:
+            println("Default trigged for GestureRecognizer")
+            break
+        }
+    }
+    
+    private func resetViewPositionAndTransformations() {
+        UIView.animateWithDuration(0.2, animations: { () -> Void in
+            self.center = self.originalPoint!
+        })
     }
     
     private func setConstraints() {
