@@ -31,15 +31,12 @@ class SwipeView: UIView {
     
     private func initialize() {
         
-        self.backgroundColor = UIColor.clearColor()
+        // Change back to clearColor()
+        self.backgroundColor = UIColor.redColor()
         addSubview(card)
         
         self.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "dragged:"))
-        
-        originalPoint = center
-        
-        card.setTranslatesAutoresizingMaskIntoConstraints(false)
-        setConstraints()
+        card.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
     }
     
     func dragged(gestureRecognizer: UIPanGestureRecognizer) {
@@ -51,6 +48,11 @@ class SwipeView: UIView {
             originalPoint = center
         case UIGestureRecognizerState.Changed:
             center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
+            
+            let rotationPercentage = min(distance.x/(self.superview!.frame.width/2), 1)
+            let rotationAngle = (CGFloat(2*M_PI/16)*rotationPercentage)
+            transform = CGAffineTransformRotate(transform, rotationAngle)
+            
         case UIGestureRecognizerState.Ended:
             resetViewPositionAndTransformations()
         default:
@@ -62,18 +64,19 @@ class SwipeView: UIView {
     private func resetViewPositionAndTransformations() {
         UIView.animateWithDuration(0.2, animations: { () -> Void in
             self.center = self.originalPoint!
+            self.transform = CGAffineTransformMakeRotation(0)
         })
     }
     
-    private func setConstraints() {
-        
-        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0))
-        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0))
-        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Leading, multiplier: 1.0, constant: 0))
-        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Trailing, multiplier: 1.0, constant: 0))
-        
-        
-        
-    }
+//    private func setConstraints() {
+//        
+//        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0))
+//        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0))
+//        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Leading, multiplier: 1.0, constant: 0))
+//        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Trailing, multiplier: 1.0, constant: 0))
+//        
+//        
+//        
+//    }
     
 }
