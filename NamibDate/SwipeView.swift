@@ -11,6 +11,14 @@ import UIKit
 
 class SwipeView: UIView {
     
+    enum Direction {
+        case None
+        case Left
+        case Right
+    }
+    
+    weak var delegate: SwipeViewDelegate?
+    
     private let card: CardView = CardView()
     private var originalPoint: CGPoint?
     
@@ -67,12 +75,6 @@ class SwipeView: UIView {
         }
     }
     
-    enum Direction {
-        case None
-        case Left
-        case Right
-    }
-    
     func swipe(s: Direction) {
         
         if s == .None {
@@ -82,10 +84,16 @@ class SwipeView: UIView {
         if s == .Left {
             parentWidth *= -1
         }
-        UIView.animateWithDuration(0.2, animations: { () -> Void in
-            self.center.x = self.frame.origin.x + parentWidth
-        })
         
+        UIView.animateWithDuration(0.2, animations: {
+                self.center.x = self.frame.origin.x + parentWidth
+            }, completion: {
+                success in
+                if let d = self.delegate {
+                    s == Direction.Right ? d.swipedRight() : d.swipedLeft()
+                }
+            }
+        )
     }
     
     private func resetViewPositionAndTransformations() {
@@ -94,16 +102,9 @@ class SwipeView: UIView {
             self.transform = CGAffineTransformMakeRotation(0)
         })
     }
-    
-//    private func setConstraints() {
-//        
-//        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0))
-//        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0))
-//        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Leading, multiplier: 1.0, constant: 0))
-//        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Trailing, multiplier: 1.0, constant: 0))
-//        
-//        
-//        
-//    }
-    
+}
+
+protocol SwipeViewDelegate: class {
+    func swipedLeft()
+    func swipedRight()
 }
