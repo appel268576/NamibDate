@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		516B7AD46F05234FE2949CB2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0ABE103002FE3422E5A7972 /* libPods.a */; };
+		B29345981B60D3120021AD08 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29345961B60D3120021AD08 /* Parse.framework */; };
+		B29345991B60D3120021AD08 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29345971B60D3120021AD08 /* ParseFacebookUtils.framework */; };
+		B293459B1B60D3580021AD08 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B293459A1B60D3580021AD08 /* AudioToolbox.framework */; };
+		B293459D1B60D3670021AD08 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B293459C1B60D3670021AD08 /* CFNetwork.framework */; };
+		B293459F1B60D3700021AD08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B293459E1B60D3700021AD08 /* CoreGraphics.framework */; };
+		B29345A11B60D3750021AD08 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29345A01B60D3750021AD08 /* CoreLocation.framework */; };
+		B29345A31B60D37C0021AD08 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29345A21B60D37C0021AD08 /* MobileCoreServices.framework */; };
+		B29345A51B60D3840021AD08 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29345A41B60D3840021AD08 /* QuartzCore.framework */; };
+		B29345A71B60D38A0021AD08 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29345A61B60D38A0021AD08 /* Security.framework */; };
+		B29345A91B60D3920021AD08 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29345A81B60D3920021AD08 /* StoreKit.framework */; };
+		B29345AB1B60D39B0021AD08 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29345AA1B60D39B0021AD08 /* SystemConfiguration.framework */; };
+		B29345AD1B60D3BD0021AD08 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B29345AC1B60D3BD0021AD08 /* libz.dylib */; };
+		B29345AF1B60D3D30021AD08 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B29345AE1B60D3D30021AD08 /* libsqlite3.dylib */; };
+		B2B46CF21B58D2DE00F07DFB /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B46CF11B58D2DE00F07DFB /* SwipeView.swift */; };
+		B2B46CF51B58D86100F07DFB /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B46CF41B58D86100F07DFB /* CardsViewController.swift */; };
 		B2CAFE151B56365000488DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CAFE141B56365000488DF9 /* AppDelegate.swift */; };
 		B2CAFE181B56365000488DF9 /* NamibDate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2CAFE161B56365000488DF9 /* NamibDate.xcdatamodeld */; };
 		B2CAFE1A1B56365000488DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CAFE191B56365000488DF9 /* ViewController.swift */; };
@@ -28,6 +44,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0ABE103002FE3422E5A7972 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A292935B78BE08AF4260C6CE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B29345961B60D3120021AD08 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B29345971B60D3120021AD08 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		B293459A1B60D3580021AD08 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B293459C1B60D3670021AD08 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B293459E1B60D3700021AD08 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B29345A01B60D3750021AD08 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B29345A21B60D37C0021AD08 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B29345A41B60D3840021AD08 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B29345A61B60D38A0021AD08 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B29345A81B60D3920021AD08 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B29345AA1B60D39B0021AD08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B29345AC1B60D3BD0021AD08 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B29345AE1B60D3D30021AD08 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B2ACB9421B6117B400BB9624 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		B2B46CF11B58D2DE00F07DFB /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeView.swift; path = NamibDate/SwipeView.swift; sourceTree = "<group>"; };
+		B2B46CF41B58D86100F07DFB /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		B2CAFE0F1B56365000488DF9 /* NamibDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamibDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CAFE131B56365000488DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2CAFE141B56365000488DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +74,7 @@
 		B2CAFE2C1B56365000488DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2CAFE2D1B56365000488DF9 /* NamibDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamibDateTests.swift; sourceTree = "<group>"; };
 		B2CAFE381B578B8A00488DF9 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E098E8A506ACC2E13647774D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +82,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29345AF1B60D3D30021AD08 /* libsqlite3.dylib in Frameworks */,
+				B29345AD1B60D3BD0021AD08 /* libz.dylib in Frameworks */,
+				B29345AB1B60D39B0021AD08 /* SystemConfiguration.framework in Frameworks */,
+				B29345A91B60D3920021AD08 /* StoreKit.framework in Frameworks */,
+				B29345A71B60D38A0021AD08 /* Security.framework in Frameworks */,
+				B29345A51B60D3840021AD08 /* QuartzCore.framework in Frameworks */,
+				B29345A31B60D37C0021AD08 /* MobileCoreServices.framework in Frameworks */,
+				B29345A11B60D3750021AD08 /* CoreLocation.framework in Frameworks */,
+				B293459F1B60D3700021AD08 /* CoreGraphics.framework in Frameworks */,
+				B293459D1B60D3670021AD08 /* CFNetwork.framework in Frameworks */,
+				B293459B1B60D3580021AD08 /* AudioToolbox.framework in Frameworks */,
+				B29345991B60D3120021AD08 /* ParseFacebookUtils.framework in Frameworks */,
+				B29345981B60D3120021AD08 /* Parse.framework in Frameworks */,
+				516B7AD46F05234FE2949CB2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +109,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19406D07FCCF5B45C5C49475 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E098E8A506ACC2E13647774D /* Pods.debug.xcconfig */,
+				A292935B78BE08AF4260C6CE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B29345951B60D2E10021AD08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B29345AE1B60D3D30021AD08 /* libsqlite3.dylib */,
+				B29345AC1B60D3BD0021AD08 /* libz.dylib */,
+				B29345AA1B60D39B0021AD08 /* SystemConfiguration.framework */,
+				B29345A81B60D3920021AD08 /* StoreKit.framework */,
+				B29345A61B60D38A0021AD08 /* Security.framework */,
+				B29345A41B60D3840021AD08 /* QuartzCore.framework */,
+				B29345A21B60D37C0021AD08 /* MobileCoreServices.framework */,
+				B29345A01B60D3750021AD08 /* CoreLocation.framework */,
+				B293459E1B60D3700021AD08 /* CoreGraphics.framework */,
+				B293459C1B60D3670021AD08 /* CFNetwork.framework */,
+				B293459A1B60D3580021AD08 /* AudioToolbox.framework */,
+				B29345961B60D3120021AD08 /* Parse.framework */,
+				B29345971B60D3120021AD08 /* ParseFacebookUtils.framework */,
+				A0ABE103002FE3422E5A7972 /* libPods.a */,
+			);
+			name = Frameworks;
+			path = NamibDate;
+			sourceTree = "<group>";
+		};
+		B2B46CF31B58D82100F07DFB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2CAFE191B56365000488DF9 /* ViewController.swift */,
+				B2B46CF41B58D86100F07DFB /* CardsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		B2CAFE061B56365000488DF9 = {
 			isa = PBXGroup;
 			children = (
 				B2CAFE111B56365000488DF9 /* NamibDate */,
+				B29345951B60D2E10021AD08 /* Frameworks */,
 				B2CAFE2A1B56365000488DF9 /* NamibDateTests */,
 				B2CAFE101B56365000488DF9 /* Products */,
+				19406D07FCCF5B45C5C49475 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,7 +174,7 @@
 			children = (
 				B2CAFE141B56365000488DF9 /* AppDelegate.swift */,
 				B2CAFE371B578B6000488DF9 /* Views */,
-				B2CAFE191B56365000488DF9 /* ViewController.swift */,
+				B2B46CF31B58D82100F07DFB /* ViewControllers */,
 				B2CAFE1B1B56365000488DF9 /* Main.storyboard */,
 				B2CAFE1E1B56365000488DF9 /* Images.xcassets */,
 				B2CAFE201B56365000488DF9 /* LaunchScreen.xib */,
@@ -97,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				B2CAFE131B56365000488DF9 /* Info.plist */,
+				B2ACB9421B6117B400BB9624 /* Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				B2CAFE381B578B8A00488DF9 /* CardView.swift */,
+				B2B46CF11B58D2DE00F07DFB /* SwipeView.swift */,
 			);
 			name = Views;
 			path = ..;
@@ -134,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2CAFE311B56365000488DF9 /* Build configuration list for PBXNativeTarget "NamibDate" */;
 			buildPhases = (
+				EA4EE02120CB39EC1F225C80 /* Check Pods Manifest.lock */,
 				B2CAFE0B1B56365000488DF9 /* Sources */,
 				B2CAFE0C1B56365000488DF9 /* Frameworks */,
 				B2CAFE0D1B56365000488DF9 /* Resources */,
+				6F43EF3C3C79B5E88A0A2F3E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,6 +317,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F43EF3C3C79B5E88A0A2F3E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA4EE02120CB39EC1F225C80 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B2CAFE0B1B56365000488DF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -229,7 +357,9 @@
 			files = (
 				B2CAFE1A1B56365000488DF9 /* ViewController.swift in Sources */,
 				B2CAFE151B56365000488DF9 /* AppDelegate.swift in Sources */,
+				B2B46CF51B58D86100F07DFB /* CardsViewController.swift in Sources */,
 				B2CAFE391B578B8A00488DF9 /* CardView.swift in Sources */,
+				B2B46CF21B58D2DE00F07DFB /* SwipeView.swift in Sources */,
 				B2CAFE181B56365000488DF9 /* NamibDate.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,21 +487,33 @@
 		};
 		B2CAFE321B56365000488DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E098E8A506ACC2E13647774D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NamibDate",
+				);
 				INFOPLIST_FILE = NamibDate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NamibDate/Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		B2CAFE331B56365000488DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A292935B78BE08AF4260C6CE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NamibDate",
+				);
 				INFOPLIST_FILE = NamibDate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NamibDate/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -428,6 +570,7 @@
 				B2CAFE331B56365000488DF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2CAFE341B56365000488DF9 /* Build configuration list for PBXNativeTarget "NamibDateTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +579,7 @@
 				B2CAFE361B56365000488DF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
