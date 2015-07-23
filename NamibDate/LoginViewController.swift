@@ -23,7 +23,19 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func pressedFBLogin(sender: UIButton) {
-        
+        PFFacebookUtils.logInWithPermissions(["public_profile", "user_about_me", "user_birthday"], block: {
+            user, error in
+            
+            if user == nil {
+                println("Uh oh, the user cancelled Facebook Login")
+            }
+            else if user!.isNew {
+                println("User signed up and logged in thorugh Facebook")
+            }
+            else {
+                println("User logged in thorugh Facebook")
+            }
+        })
     }
     
     

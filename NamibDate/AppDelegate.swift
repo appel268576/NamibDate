@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Parse.setApplicationId("eHuA3xELR93KDAxtpYiDVuk5e5qc1795GQlgEWVG",
             clientKey: "9NVWzrkhQP3VXAlSk5SHmBcTNWyuAoOV6Ig20uMF")
+        
+        PFFacebookUtils.initializeFacebook()
 
         return true
     }
