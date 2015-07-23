@@ -23,6 +23,7 @@
 		B29345AF1B60D3D30021AD08 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B29345AE1B60D3D30021AD08 /* libsqlite3.dylib */; };
 		B2B46CF21B58D2DE00F07DFB /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B46CF11B58D2DE00F07DFB /* SwipeView.swift */; };
 		B2B46CF51B58D86100F07DFB /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B46CF41B58D86100F07DFB /* CardsViewController.swift */; };
+		B2BE52FC1B61299F00DDF3E7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE52FB1B61299F00DDF3E7 /* LoginViewController.swift */; };
 		B2CAFE151B56365000488DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CAFE141B56365000488DF9 /* AppDelegate.swift */; };
 		B2CAFE181B56365000488DF9 /* NamibDate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2CAFE161B56365000488DF9 /* NamibDate.xcdatamodeld */; };
 		B2CAFE1A1B56365000488DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CAFE191B56365000488DF9 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		B2ACB9421B6117B400BB9624 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		B2B46CF11B58D2DE00F07DFB /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeView.swift; path = NamibDate/SwipeView.swift; sourceTree = "<group>"; };
 		B2B46CF41B58D86100F07DFB /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		B2BE52FB1B61299F00DDF3E7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B2CAFE0F1B56365000488DF9 /* NamibDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamibDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CAFE131B56365000488DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2CAFE141B56365000488DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B2CAFE191B56365000488DF9 /* ViewController.swift */,
+				B2BE52FB1B61299F00DDF3E7 /* LoginViewController.swift */,
 				B2B46CF41B58D86100F07DFB /* CardsViewController.swift */,
 			);
 			name = ViewControllers;
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BE52FC1B61299F00DDF3E7 /* LoginViewController.swift in Sources */,
 				B2CAFE1A1B56365000488DF9 /* ViewController.swift in Sources */,
 				B2CAFE151B56365000488DF9 /* AppDelegate.swift in Sources */,
 				B2B46CF51B58D86100F07DFB /* CardsViewController.swift in Sources */,
