@@ -54,11 +54,38 @@ class SwipeView: UIView {
             transform = CGAffineTransformMakeRotation(rotationAngle)
             
         case UIGestureRecognizerState.Ended:
-            resetViewPositionAndTransformations()
+            if abs(distance.x) < frame.width/4 {
+                resetViewPositionAndTransformations()
+            }
+            else {
+                swipe(distance.x > 0 ? .Right : .Left)
+            }
+            
         default:
             println("Default trigged for GestureRecognizer")
             break
         }
+    }
+    
+    enum Direction {
+        case None
+        case Left
+        case Right
+    }
+    
+    func swipe(s: Direction) {
+        
+        if s == .None {
+            return
+        }
+        var parentWidth = superview!.frame.size.width
+        if s == .Left {
+            parentWidth *= -1
+        }
+        UIView.animateWithDuration(0.2, animations: { () -> Void in
+            self.center.x = self.frame.origin.x + parentWidth
+        })
+        
     }
     
     private func resetViewPositionAndTransformations() {
